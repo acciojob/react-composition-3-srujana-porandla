@@ -20,6 +20,12 @@
     opacity: 0;
     transition: opacity 0.3s;
   }
+  h2.tooltip > div{
+    text-align: center;
+  }
+  p.tooltip > div{
+    text-align: center;
+  }
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
