@@ -3,15 +3,16 @@ import './../styles/Tooltip.css';
 
 
 function Tooltip({ text, children }) {
-  const [visible, setVisible] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
 
-  const showTooltip = () => setVisible(true);
-  const hideTooltip = () => setVisible(false);
+  const handleMouseEnter = () => setShowTooltip(true);
+  const handleMouseLeave = () => setShowTooltip(false);
 
   return (
-    <div className="tooltip" onMouseEnter={showTooltip} onMouseLeave={hideTooltip}>
+    <div className="tooltip" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {children}
-      {visible && <span className="tooltiptext">{text}</span>}
+      {showTooltip && <div className="tooltiptext">{text}</div>}
+
     </div>
   );
 }

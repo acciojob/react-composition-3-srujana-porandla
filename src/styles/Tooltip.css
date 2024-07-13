@@ -14,13 +14,13 @@
     border-radius: 6px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Position the tooltip above the text */
+    bottom: 125%; 
     left: 50%;
-    margin-left: -70px; /* Use half of the width to center the tooltip */
+    margin-left: -70px; 
     opacity: 0;
     transition: opacity 0.3s;
   }
-  h2.tooltip > div > div{
+  h2.tooltip > div {
     text-align: center;
     font-style: oblique;
 
