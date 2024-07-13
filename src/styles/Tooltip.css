@@ -20,11 +20,14 @@
     opacity: 0;
     transition: opacity 0.3s;
   }
-  h2.tooltip > div{
+  h2.tooltip > div > div{
     text-align: center;
+    font-style: oblique;
+
   }
   p.tooltip > div{
     text-align: center;
+    font-style: normal;
   }
   
   .tooltip:hover .tooltiptext {
